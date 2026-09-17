@@ -1,7 +1,8 @@
 {
   "name": "Emberfall — Ánh lửa cuối cùng",
   "short_name": "Emberfall",
-  "start_url": "./",
+  "start_url": "/emberfall/",
+  "scope": "/emberfall/",
   "display": "standalone",
   "background_color": "#101b28",
   "theme_color": "#101b28",
