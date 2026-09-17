@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#101b28"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="Emberfall"><title>Emberfall — Ánh lửa cuối cùng</title>
+<link rel="manifest" href="./manifest.webmanifest"><link rel="apple-touch-icon" href="./icon.svg">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<div id="game" aria-label="Sân cổ Emberfall, trò chơi 3D"></div><div id="vignette"></div>
+<header>
+<div class="brand"><span class="crest">◇</span>EMBERFALL<small>ÁNH LỬA CUỐI CÙNG</small></div>
+<div class="objective"><span id="objective">Tìm năm ember</span><small id="hint">Mang ánh lửa về cổng cổ</small></div>
+<div class="topright"><span class="ember-icon" aria-hidden="true">♨</span><span id="count">0</span><span class="total"> / 5</span><button id="pause" aria-label="Tạm dừng">Ⅱ</button></div>
+</header>
+<div id="toast" role="status" aria-live="polite"></div>
+<footer>
+<div class="lantern"><span class="lamp" aria-hidden="true">♧</span><div><div class="meter-label"><span>ÁNH ĐÈN</span><span id="percent">100%</span></div><div class="meter" role="meter" aria-label="Ánh sáng đèn lồng" aria-valuemin="0" aria-valuemax="100" aria-valuenow="100"><div id="lightbar"></div></div><small id="danger">Bóng tối đang lắng nghe.</small></div></div>
+<div class="controls">WASD / ↑↓←→ <span>di chuyển</span> · KÉO <span>xoay</span> · CUỘN <span>zoom</span><br><span>SPACE xung sáng · ESC tạm dừng · R chơi lại</span></div>
+<button id="pulse" aria-label="Phóng xung đèn lồng"><span aria-hidden="true">♨</span><small id="pulseText">SPACE</small></button>
+</footer>
+<div id="mobile"><div id="stick" role="group" aria-label="Cần di chuyển cảm ứng"><i></i></div></div>
+<div id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" hidden>
+<div class="modal-card"><div class="eyebrow">EMBERFALL</div><h1 id="modalTitle">Đánh thức cổng cổ</h1>
+<p id="modalBody">Thu thập năm ember phát sáng trong sân đổ nát, rồi mang ánh lửa về cổng cổ. Né bóng tối hoặc đẩy chúng ra bằng xung đèn lồng.</p>
+<button id="resume">Bắt đầu hành trình</button><button id="restart" class="secondary">Chơi lại · R</button><button id="audio" class="secondary" aria-pressed="false">Âm thanh: tắt</button>
+<div class="instructions">WASD / phím mũi tên để đi. Kéo để xoay, cuộn để zoom.<br>Điện thoại: cần trái để đi, kéo / chụm hai ngón để chỉnh góc nhìn.<br>SPACE / nút lửa: đẩy bóng tối, hồi sau 7 giây.<br>Nhặt ember để hồi ánh đèn. Đèn cạn thì hành trình kết thúc.<br><br><strong>Chơi từ Màn hình chính iPhone:</strong> mở game bằng Safari → chạm Chia sẻ → <em>Thêm vào Màn hình chính</em> → <em>Thêm</em>. Biểu tượng Emberfall sẽ mở như một game riêng.</div>
+</div></div>
+<script type="module" src="/main.js"></script>
+</body></html>

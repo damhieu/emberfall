@@ -1,0 +1,8 @@
+.dream-loop/
+node_modules/
+.npm-cache/
+tools/dream-loop/
+dist/
+Emberfall.html
+Emberfall-Local.zip
+Emberfall-preview.png

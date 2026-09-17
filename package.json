@@ -1,0 +1,16 @@
+{
+  "name": "emberfall",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "vite --host 127.0.0.1",
+    "dev": "vite --host 127.0.0.1",
+    "build": "vite build && node tools/package-local.mjs",
+    "preview": "node serve.cjs"
+  },
+  "dependencies": {
+    "three": "^0.180.0",
+    "vite": "^7.1.0"
+  }
+}
